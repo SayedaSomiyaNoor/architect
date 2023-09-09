@@ -152,3 +152,65 @@ nav li {
     font-size: 25px;
     font-weight: 500;
 }
+.fact-title{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 100px 0px 10px 35px;
+}
+.fact-description{
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0px 50px 35px;
+}
+.facts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fact{
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+}
+.sponsors-text{
+    text-align: center;
+}
+.sponsor-title{
+    font-size: 45px;
+    font-weight: 700;
+}
+.sponsor-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Dark-03, #727272);
+}
+.sponsors{
+    display: flex;
+    align-items: center;
+}
+.sponsor{
+    width: 100px;
+    height: 50px;
+    margin: 60px;
+}
+.sponsor img{
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+}
+footer{
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 20px;
+    margin: 40px;
+}
+footer p{
+    color: var(--Dark-02, #424242);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
