@@ -1,3 +1,4 @@
+
 header{
     background: rgba(255, 144, 14, 0.10);
 }
@@ -96,7 +97,7 @@ nav li {
     font-weight: 700;
     padding: 10px;
     border-left: 5px solid;
-    border-image: linear-gradient(lightsalmon,yellow);
+    border-image: linear-gradient(#FF900E, #FF900E);
     border-image-slice: 1;
 }
 .part-2 p{
@@ -190,17 +191,15 @@ nav li {
     color: var(--Dark-03, #727272);
 }
 .sponsors{
-    display: flex;
-    align-items: center;
-}
-.sponsor{
-    width: 100px;
-    height: 50px;
-    margin: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 50px;
+   padding: 40px;
 }
 .sponsor img{
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
 }
 footer{
     border-radius: 8px;
@@ -213,4 +212,170 @@ footer p{
     font-size: 20px;
     font-weight: 400;
     text-align: center;
+}
+@media screen and (max-width : 576px){
+    nav,nav ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+    }
+    .nav-title{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    nav li{
+        margin: 5px;
+    }
+    .banner-title{
+        font-size: 34px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom:0px;
+    }
+    .fact-description br,
+    .banner-description br {
+        content: "";
+    }
+    .fact-description br,
+    .banner-description br{
+        content: " ";
+    }
+    .banner img{
+        width: 300px;
+        height: 150px;
+        padding: 30px;
+    }
+    .features{
+        flex-direction:column-reverse;
+        gap: 30px;
+        margin: 20px;
+        text-align: center;
+    }
+    .quick,.of-our,.feature{
+        font-size: 35px;
+    }
+    .feature-description{
+        font-size: 13px;
+    }
+    .primary-btn{
+        font-size: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .team img{
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+    }
+    .architect{
+        flex-direction: column;
+        gap: 50px;
+        margin: 15px;
+    }
+    .part-1 h3{
+        font-size: 35px;
+        font-weight: 700;
+        margin: 10px 20px;
+        text-align: center;
+        border-left: 0;
+        border-bottom: 5px solid;
+
+        border-image-slice: 1;
+    }
+    .part-2 p{
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .part-3, .part-4, .part-5, .part-6{
+        margin-left: 0px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .part-3 h6, .part-4 h6, .part-5 h6, .part-6 h6{
+        font-size: 20px;
+        margin: 5px ;
+        font-weight: 600;
+    }
+    .part-3 p, .part-4 p, .part-5 p, .part-6 p{
+        font-size: 12px;
+        margin: 5px;
+    }
+    .architect img{
+        width: 300px;
+        margin-left: 25px;
+    }
+    .architect button{
+        padding: 10px;
+    }
+    .year {
+        text-align: center;
+        font-size: 25px;
+    }
+    .experience {
+        font-size: 15px;
+    }
+    .button-overlay button {
+        top: 100%;
+        right: 15%;
+    }
+    .fact-title {
+        font-size: 35px;
+        margin: 100px 0px 0px 0px;
+        text-align: center;
+    }
+    .fact-description{
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin: 10px 5px;
+    }
+    .facts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .fact {
+        width: 110px;
+        height: 110px;
+        margin: 10px;
+    }
+    .fact h3,p{
+        margin: 2px; 
+    }
+    .sponsor-title{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 15px;
+
+    }
+    .sponsor-description{
+        font-size: 13px;
+        padding:0px 10px;
+    }
+    .sponsors{
+       display: grid;
+       grid-template-columns: repeat(3 , 1fr);
+       gap: 0px;
+       place-items: center;
+       width: 300px;
+       height: auto;
+       padding:0px;
+       margin:10px 10px 20px 5px;
+    }
+    .sponsor img{
+        width: 45px;
+        margin: 0;
+        padding: 0;
+        padding: 10px 0px;
+    }
+    #emm{
+        margin-left: 90px;
+    }
+    footer p{
+        font-size: 13px;
+    }
+   
 }
